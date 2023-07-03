@@ -1,0 +1,98 @@
+.bannerinicio{
+    background: linear-gradient(90deg, rgba(119,111,113,1) 0%, rgba(69,57,61,1) 100%);
+    width: 95%;
+    margin:auto;
+    border: 5px solid rgb(28, 24, 51);
+    border-radius: 2vw;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    padding:3vw;
+    @media (min-width:768px){
+      width: 75%;
+    }
+    .textobannerinicio{
+      line-height: 4vw;
+      @media (min-width:768px){
+        line-height: 2.5vw;
+      }
+    }
+    .imagenbanner{
+      width: 100%;
+      height: 80%;
+      align-self: center;
+    }
+    h1{
+      font-size: 5vw;
+      font-weight: bolder;
+      text-align: right;
+      padding-bottom: 3vw;
+      background: #34344F;
+      background: linear-gradient(to right, #34344F 0%, #1b1819 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p{
+      text-align: left;
+      font-size: 4vw;
+      @media (min-width:768px){
+        font-size: 2vw;
+      }
+    }
+    .parrafobanner{
+      font-size: 3vw;
+      text-align: left;
+    }
+    .resaltadobanner{
+      font-size: 4.5vw;
+      font-weight: bolder;
+      @media (min-width:768px){
+        font-size: 3vw;
+      }
+    }
+  }
+
+.displayproductosinicio{
+  width: 95%;
+  margin:auto;
+  margin-top: 2vw;
+  text-align: center;
+  @media (min-width:768px){
+    width: 85%;
+  }
+  .containerproductos{
+    display: block;
+    @media (min-width:768px){
+      display: grid;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .articleproducto{
+      padding: 1vw;
+      .imgproducto{
+        border-radius: 2vw;
+        border: 3px solid gray;
+        width: 60%;
+        height: 60%;      
+        @media (min-width:768px){
+          border-radius: 0.5vw;
+          height: 75%;
+        }
+      }
+      p{
+        font-size: 4.5;
+        font-weight: bold;
+      }
+    }
+    
+  }
+  h2{
+    font-size: 5vw;
+    font-weight: bolder;
+  }
+  p{
+    font-size: 4vw;
+    @media (min-width:768px){
+      font-size: 2vw;
+    }
+  }
+}

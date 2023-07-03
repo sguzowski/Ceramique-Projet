@@ -1,0 +1,68 @@
+.mainblog{
+  position:relative;
+  margin-bottom: 10vw;
+  @media (min-width:768px){
+    margin-bottom:2vw;
+  }
+  .h1blog{
+    text-align: center;
+  }
+  .containerblog{
+    width: 95%;
+    display: block;
+    margin:auto;
+    @media (min-width:768px){
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto ;
+      grid-template-areas:
+      "notamain notasub1"
+      "notamain notasub2";
+    }
+    .notablog{
+      text-align: center;
+      position:relative;
+      margin: 1vw;
+      .h2blog{
+        display: block;
+        position:absolute;
+        top:3vw;
+        left:3vw;
+        z-index: 1;
+        background:rgb(212, 90, 111);
+        border: 1px solid rgb(212, 90, 111);
+        border-radius: 1vw;
+        @media (min-width:768px){
+          top: 1vw;
+          left: 1vw;
+        }
+      }
+      .imgblog{
+        height: 100%;
+        width:100%;
+        position: relative;
+        border: 5px solid rgb(61, 39, 39);
+      }
+    }
+  }
+  .buttonblogold{
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: -10vw;
+    right: 4vw;
+    @media (min-width:768px){
+      bottom:-2.5vw;
+      font-size: 1.5vw;
+    }
+  }
+  #notamain{
+    grid-area: notamain;
+  }
+  #notasub1{
+      grid-area: notasub1;
+  }
+  #notasub2{
+      grid-area: notasub2;
+  }
+}

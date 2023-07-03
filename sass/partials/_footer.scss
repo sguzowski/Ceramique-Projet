@@ -1,0 +1,123 @@
+.footercontainer{
+    border: 5px solid gray;
+    border-radius: 2vw;
+    background-color: rgb(204, 188, 175);
+    width: 95%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+  
+    .footerlogotexto{
+      display:flex;
+      align-items:center;
+      flex-flow: column;
+      text-align: left;
+      img{
+        margin-bottom:1vw;
+      }
+      .logoenfooter{
+        border-radius: 1vw;
+        width: 10vw;
+        height: 10vw;
+        @media (min-width:768px){
+          width:5vw;
+          height: 5vw;
+        }
+      }
+      .textofooter{
+        font-size: 1.5vw;
+        @media (min-width: 768px){
+          font-size: 1vw;
+        }  
+      }
+    
+  
+    }
+  
+    .redesytexto{
+      font-size: 3vw;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 
+      "titulo titulo titulo"
+      "redi redf redt";    
+      text-align: center;
+      @media (min-width: 768px){
+        font-size: 1.4vw;
+      }
+      #titulo{
+        grid-area: titulo;
+      }
+      #redi{
+          grid-area: redi;
+      }
+      #redf{
+          grid-area: redf;
+      }
+      #redt{
+          grid-area: redt;
+      }
+      #redi, #redf, #redt{
+          margin-left: 1vw;
+          margin-right: 1vw;
+      }
+      .logosredes{
+        width: 5vw;
+        height: 5vw;
+      }
+      div{
+        a{
+          p{
+            font-size: 2.5vw;
+            @media (min-width: 768px){
+              font-size: 1.2vw;
+            }
+          }
+        }
+      }
+  
+  
+  
+    }
+  
+    .suscripcion{
+      text-align: center;
+      .titulosub{
+        font-size: 3vw;
+        @media (min-width: 768px){
+          font-size: 1.4vw;
+        }
+      }
+      #mailform{
+        display: flex;
+        flex-flow: column;
+      }
+      .inputsub{
+        display: block;
+        width: 80%;
+        height: 3vw;
+        margin:auto;
+        margin-top: -2vw;
+        margin-bottom: 1vw;
+        @media (min-width:768px){
+          margin-top: 0.5vw;
+        }
+      }
+      .buttonsub{
+        font-size: 2.5vw;
+        font-weight: bold;
+        padding: 0.5vw;
+        width:max-content;
+        margin:auto;
+        margin-top: 1vw;
+        @media (min-width:768px){
+          font-size: 1.4vw;
+        }
+      }
+    }
+    div{
+      margin:1vw;
+    }
+  }
